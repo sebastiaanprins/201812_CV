@@ -7,14 +7,39 @@ body {
     grid-template-columns: 6fr 11fr 3fr;
     grid-gap: 3em;
     border: 1px solid black;
+    color: #8A8C87;
+}
+.whiteText {
+    color: white;
+    font-weight: bold;
+}
+
+.pageHeaders {
+    color: white;
+    font-weight: bold;
+    font-size:1.5em;
+}
+
+h3 {
+    margin-top: 60px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
 }
 
 .nav-section {
     border: 1px solid rgb(177, 248, 10);
     background-color: rgba(5, 1, 1, 0.5);
     text-align: right;
-    font-family: sans-serif;
-    font-size: 2em;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1.5em;
     min-height: 100vh;
     max-height: 100%;
 /*  grid-column: 1/3;
@@ -30,10 +55,15 @@ body {
 
 ul li {
     list-style-type: none;
+    margin-bottom: 1em;
+
 }
 
 ul li a {
-    color: white;
+    color: #8A8C87;
+    font-size: 0.6em;
+    
+    /* font-family: ; */
 }
 
 .grid_main-section {
@@ -41,8 +71,8 @@ ul li a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em 2%;
 /*  background-color: ; */
+    margin-top: 60px;
     text-align: center;
-    padding: 0px;
     grid-auto-rows: min-content;
     border: 1px solid black;
 }
@@ -50,14 +80,20 @@ ul li a {
 .grid_main-section > div {
     background-color: rgba(5, 1, 1, 0.5);
     color: white;
-    font-size: 30px;
     border: 1px solid black;
 }
 
 .main_1-header {
     grid-column: 1/3;
+    font-size: 24px;
 }
 
+.main_2-header {
+    grid-column: 1/3;
+    max-width: 100%;
+    height: auto;
+
+}
 
 /*  nav {
         background-color: rgb(5, 1, 1);
